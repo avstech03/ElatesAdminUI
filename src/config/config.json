@@ -1,0 +1,8 @@
+{
+    "baseuri": "http://localhost:8002",
+    "homescreenTemplate": {
+        "advance": {
+            "enable": false
+        } 
+    }
+}

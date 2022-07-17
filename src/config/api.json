@@ -1,0 +1,118 @@
+{
+    "addNewAdmin": {
+        "uri": "",
+        "method": "POST"
+    },
+    "login": {
+        "uri": "/elates/admin/login",
+        "method": "GET"
+    },
+    "getallproducts": {
+        "uri": "/elates/api/admin/:userId/products",
+        "method": "GET"
+    },
+    "addnewproduct": {
+        "uri": "/elates/api/admin/:userId/products",
+        "method": "POST"
+    },
+    "getproduct": {
+        "uri": "/elates/api/admin/:userId/products/:productId",
+        "method": "GET"
+    },
+    "updateproduct": {
+        "uri": "/elates/api/admin/:userId/products/:productId",
+        "method": "PUT"
+    },
+    "deleteproduct": {
+        "uri": "/elates/api/admin/:userId/products/:productId",
+        "method": "DELETE"
+    },
+    "getallcategories": {
+        "uri": "/elates/api/admin/:userId/category",
+        "method": "GET"
+    },
+    "addcategory": {
+        "uri": "/elates/api/admin/:userId/category",
+        "method": "POST"
+    },
+    "updatecategory": {
+        "uri": "/elates/api/admin/:userId/category/:categoryId",
+        "method": "PUT"
+    },
+    "upload": {
+        "uri": "/elates/api/admin/:userId/upload",
+        "method": "POST"
+    },
+    "getOrders": {
+        "uri": "/elates/api/admin/:userId/order",
+        "method": "GET"
+    },
+    "getproductnames": {
+        "uri": "/elates/api/admin/:userId/productnames",
+        "method": "PUT"
+    },
+    "getproductbyname": {
+        "uri": "/elates/api/admin/:userId/productname/:productName",
+        "method": "GET"
+    },
+    "editorder": {
+        "uri": "/elates/api/admin/:userId/order/:orderId",
+        "method": "PUT"
+    },
+    "getoffers": {
+        "uri": "/elates/api/admin/:userId/offers",
+        "method": "GET"
+    },
+    "addoffer": {
+        "uri": "/elates/api/admin/:userId/offers",
+        "method": "POST"
+    },
+    "editoffer": {
+        "uri": "/elates/api/admin/:userId/offers/:offerId",
+        "method": "PUT"
+    },
+    "deleteoffer": {
+        "uri": "/elates/api/admin/:userId/offers/:offerId",
+        "method": "DELETE"
+    },
+    "getusers": {
+        "uri": "/elates/api/admin/:userId/users",
+        "method": "GET"
+    },
+    "addtowallet": {
+        "uri": "/elates/api/admin/:userId/addAmountToWallet/:endUserId",
+        "method": "GET"
+    },
+    "getseeddata": {
+        "uri": "/elates/api/admin/:userId/seeddata",
+        "method": "GET"
+    },
+    "editseeddata": {
+        "uri": "/elates/api/admin/:userId/seeddata",
+        "method": "POST"
+    },
+    "getcoupons": {
+        "uri": "/elates/api/admin/:userId/coupon",
+        "method": "GET"
+    },
+    "addcoupon": {
+        "uri": "/elates/api/admin/:userId/coupon",
+        "method": "POST"
+    },
+    "editcoupon": {
+        "uri": "/elates/api/admin/:userId/coupon/:couponId",
+        "method": "PUT"
+    },
+    "deletecoupon": {
+        "uri": "/elates/api/admin/:userId/coupon/:couponId",
+        "method": "DELETE"
+    },
+    "gethomescreentemplate": {
+        "uri": "/elates/api/admin/:userId/homescreentemplate",
+        "method": "GET"
+    },
+    "edithomescreentemplate": {
+        "uri": "/elates/api/admin/:userId/homescreentemplate",
+        "method": "POST"
+    }
+}
