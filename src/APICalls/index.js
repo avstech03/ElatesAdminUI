@@ -1,13 +1,22 @@
 import axios from "axios";
+import userApi from "./userApi";
+import authApi from "./authApis";
+import productApi from "./productApi";
+import categoryApi from "./categoryApis";
+import uploadApi from "./uploadFile";
+import offerApi from "./offerApis";
+import seedDataApi from "./seeddataApis";
+import couponApi from "./couponApis";
+import orderApi from "./orderApis";
 
 export default {
-    userApis: () => require("./userApi")(axios),
-    authApis: () => require("./authApis")(axios),
-    productApis: () => require("./productApi")(axios),
-    categoryApis: () => require("./categoryApis")(axios),
-    uploadApis: () => require("./uploadFile")(axios),
-    orderApis: () => require("./orderApis")(axios),
-    offerApis: () => require("./offerApis")(axios),
-    seedataApis: () => require("./seeddataApis")(axios),
-    couponApis: () => require("./couponApis")(axios),
+  userApis: () => userApi(axios),
+  authApis: () => authApi(axios),
+  productApis: () => productApi(axios),
+  categoryApis: () => categoryApi(axios),
+  uploadApis: () => uploadApi(axios),
+  orderApis: () => orderApi(axios),
+  offerApis: () => offerApi(axios),
+  seedataApis: () => seedDataApi(axios),
+  couponApis: () => couponApi(axios),
 };
