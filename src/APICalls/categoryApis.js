@@ -56,10 +56,29 @@ const categoryApi = (axios) => {
     return request.then((response) => response.data);
   };
 
+  const deleteCategory = (userId, token, categoryId) => {
+    let request = axios({
+      url: utils.constructURI(
+        "deleteCategory",
+        {},
+        {
+          userId,
+          categoryId,
+        }
+      ),
+      method: apiConfig.deleteCategory.method,
+      headers: {
+        authorization: token,
+      },
+    });
+    return request.then((response) => response.data);
+  };
+
   return {
     getAllCategories,
     addCategory,
     updateCategory,
+    deleteCategory,
   };
 };
 
