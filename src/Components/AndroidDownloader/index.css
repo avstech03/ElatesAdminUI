@@ -1,0 +1,21 @@
+.body-container {
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+  column-gap: 20px;
+}
+
+.card-content-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+
+.card-description-download-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  row-gap: 10px;
+}

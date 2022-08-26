@@ -7,6 +7,7 @@ import {
 import { createBrowserHistory } from "history";
 import Login from "./Components/Login";
 import HomeHOC from "./Components/Home";
+import AndroidDownloader from "./Components/AndroidDownloader";
 
 const history = createBrowserHistory();
 
@@ -17,6 +18,7 @@ function App() {
         <Switch>
           <Route path="/home" render={() => <HomeHOC />} />
           <Route path="/login" render={() => <Login />} />
+          <Route path="/android" render={() => <AndroidDownloader />} />
           <Route path="/" render={() => <Redirect to="/home" />}></Route>
         </Switch>
       </Router>

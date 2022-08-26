@@ -47,7 +47,6 @@ const Products = (props) => {
       .getAllProducts(props.auth.userId, props.auth.token)
       .then((response) => {
         dispatch(setProducts(response));
-        console.log("Sunny@@     PRODUCTS!!!!!!   ", response);
       })
       .then(() => setLoader(false));
     const getCategoriesP = categoryApis
