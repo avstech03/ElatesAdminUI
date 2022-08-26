@@ -8,9 +8,10 @@ const AndroidDownloader = (props) => {
       <Card
         sx={{
           width: "100%",
-          height: "50vh",
+          height: "20%",
           display: "flex",
           flexDirection: "row",
+          flexWrap: "wrap",
         }}
       >
         <CardMedia
@@ -34,7 +35,7 @@ const AndroidDownloader = (props) => {
           <div className="card-description-download-container">
             <Typography
               variant="p"
-              noWrap
+              flexWrap={true}
               href="/"
               sx={{
                 textDecoration: "none",
